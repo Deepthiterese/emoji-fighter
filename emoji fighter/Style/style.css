@@ -1,0 +1,26 @@
+.container {
+    font-family: arial;
+    font-size: 24px;
+   
+    width: 350px;
+    height: 200px;
+    outline: dashed 1px black;
+   margin-top: 20px;
+   padding-top: 20px;
+    margin: auto;
+    padding-left: 200px;
+   padding-bottom: 100px;
+    background-color: rgb(149, 231, 231);
+
+}
+button{
+    margin-top: 20px;
+width: 100px;
+height: 30px;
+}
+body{background-image: linear-gradient(to right,rgb(190, 190, 240),white);}
+  h2{
+    color: rgb(224, 155, 52);
+   font-family: cursive;
+  
+  }

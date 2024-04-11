@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emoji Fighters</title>
+  <link rel="stylesheet" href="/Style/style.css">
+</head>
+<body>
+<div class="container">
+  <h2>EMOJI FIGHTER</h2>
+  <div id="stage"></div>
+  <button id="fightButton">Pick Fighters</button>
+</div>
+  <script>
+    let fighters = ["🐉","🐥","🐊", "💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷", "🐆", "🦕", "🦁"];
+    let stageEl = document.getElementById("stage");
+    let fightButton = document.getElementById("fightButton");
+
+    fightButton.addEventListener("click", fighterFunctn) 
+        function fighterFunctn(){
+      let fighter1 = fighters[Math.floor(Math.random() * fighters.length)];
+      let fighter2 = fighters[Math.floor(Math.random() * fighters.length)];
+
+      
+      stageEl.textContent = (`${fighter1} vs ${fighter2}`) 
+    }
+  </script>
+
+</body>
+</html>
